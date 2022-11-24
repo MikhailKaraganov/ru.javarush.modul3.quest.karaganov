@@ -21,12 +21,7 @@ public class FilterServiceTest {
     HttpServletRequest request = mock(HttpServletRequest.class);
     @Mock
     HttpSession session;
-
-    @BeforeAll
-    public static void init(){
-
-    }
-
+    
     @Test
     void sessionInfoMap_returnsPropInfoTest(){
         Mockito.when(request.getSession()).thenReturn(session);
