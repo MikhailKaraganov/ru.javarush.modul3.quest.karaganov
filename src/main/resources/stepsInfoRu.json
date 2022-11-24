@@ -1,0 +1,61 @@
+[ {
+  "currentQuestion" : "Алеша зовет тебя идти за ним",
+  "stepId" : 1,
+  "hasNextStep" : true,
+  "isWin" : false,
+  "answersForCurrentQuestion" : [ {
+    "text" : "Принять приглашение",
+    "ledToStep" : 2
+  }, {
+    "text" : "Отклонить",
+    "ledToStep" : 5
+  } ]
+}, {
+  "currentQuestion" : "Подняться на мост к капитану пипелаца?",
+  "stepId" : 2,
+  "hasNextStep" : true,
+  "isWin" : false,
+  "answersForCurrentQuestion" : [ {
+    "text" : "Подняться",
+    "ledToStep" : 3
+  }, {
+    "text" : "Отказаться",
+    "ledToStep" : 6
+  } ]
+}, {
+  "currentQuestion" : "Спрашивают где живешь",
+  "stepId" : 3,
+  "hasNextStep" : true,
+  "isWin" : false,
+  "answersForCurrentQuestion" : [ {
+    "text" : "Сказать правду",
+    "ledToStep" : 4
+  }, {
+    "text" : "Назвать адрес дурки",
+    "ledToStep" : 7
+  } ]
+}, {
+  "currentQuestion" : "Тебя привезли домой и подарили бластер",
+  "stepId" : 4,
+  "hasNextStep" : false,
+  "isWin" : true,
+  "answersForCurrentQuestion" : null
+}, {
+  "currentQuestion" : "Ты не принял вызов, и остался в комнате навечно",
+  "stepId" : 5,
+  "hasNextStep" : false,
+  "isWin" : false,
+  "answersForCurrentQuestion" : null
+}, {
+  "currentQuestion" : "Ты не поднялся на мост и вернулся в комнату, там тебя и оставили навечно",
+  "stepId" : 6,
+  "hasNextStep" : false,
+  "isWin" : false,
+  "answersForCurrentQuestion" : null
+}, {
+  "currentQuestion" : "Тебя привезли в дурдом",
+  "stepId" : 7,
+  "hasNextStep" : false,
+  "isWin" : false,
+  "answersForCurrentQuestion" : null
+} ]
