@@ -1,11 +1,9 @@
 package ru.jru.quest.karaganov;
 
-
 import lombok.Getter;
 import lombok.Setter;
 import java.net.URLDecoder;
 import java.nio.charset.StandardCharsets;
-
 
 @Getter
 @Setter
@@ -26,4 +24,3 @@ public class Repository {
         pathToSessionInfo = pathToRes.substring(0,pathRes.indexOf("classes")) + "session_info.jsp";
     }
 }
-

@@ -14,15 +14,16 @@ import java.util.*;
 public class Game {
     private final ArrayList<Step> steps;
     private final Repository repository;
+    private final ObjectMapper mapper;
 
-    public Game(){
-        repository = new Repository();
+    public Game(Repository repository, ObjectMapper mapper){
+        this.mapper = mapper;
+        this.repository = repository;
         steps = readSteps();
     }
 
     @SneakyThrows
     private ArrayList<Step> readSteps() {
-        ObjectMapper mapper = new ObjectMapper();
         String pathToJsonProp = repository.getPathToJsonProp();
         File file = new File(pathToJsonProp);
         ArrayList<Step> result;

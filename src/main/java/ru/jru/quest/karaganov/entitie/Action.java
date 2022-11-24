@@ -1,11 +1,6 @@
 package ru.jru.quest.karaganov.entitie;
 
 import lombok.*;
-
-
-
-
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

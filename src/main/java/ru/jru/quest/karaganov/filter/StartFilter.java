@@ -15,11 +15,6 @@ public class StartFilter extends HttpFilter {
     private final transient FilterService filterService= new FilterService();
 
     @Override
-    public void init() throws ServletException {
-//        Don't work without this default method
-    }
-
-    @Override
     protected void doFilter(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {
 
         Map<String, String> sessionInfoParam = filterService.sessionInfoMap(req);

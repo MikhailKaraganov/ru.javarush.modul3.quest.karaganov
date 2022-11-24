@@ -1,3 +1,5 @@
+package service;
+
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -16,11 +18,9 @@ import static org.mockito.Mockito.mock;
 @ExtendWith(MockitoExtension.class)
 public class FilterServiceTest {
 
-
+    HttpServletRequest request = mock(HttpServletRequest.class);
     @Mock
-    static HttpServletRequest request = mock(HttpServletRequest.class);
-    @Mock
-    static HttpSession session;
+    HttpSession session;
 
     @BeforeAll
     public static void init(){
@@ -53,7 +53,6 @@ public class FilterServiceTest {
                 ()->assertEquals("/gameServlet?stepID=1", stringStringMap.get("servletPattern")),
                 ()->assertEquals("0.0.0.0.0", stringStringMap.get("IP")));
     }
-
 
     @Test
     void sessionInfoMap_returnsServletPatternTest(){

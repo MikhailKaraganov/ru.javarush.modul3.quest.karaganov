@@ -1,3 +1,5 @@
+package logic;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -32,7 +34,7 @@ class GameTest {
 
     @BeforeAll
     public static void init(){
-        game = new Game();
+        game = new Game(new Repository(), new ObjectMapper());
         expectedList = new ArrayList<>();
         expectedList.add(new Step("TestQuestion1",1,true,false, new ArrayList<>
                 (Arrays.asList(new Action("Action1", 2),new Action("Action2", 5)))));
