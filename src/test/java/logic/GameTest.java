@@ -58,23 +58,6 @@ class GameTest {
         assertEquals(expectedList, result);
     }
 
-//    @Test
-//    void readStepsTest_ThrowsIOExceptionIfFileIsNotExist (){
-//        assertThrows(IOException.class, () ->{
-//            Mockito.doReturn("src/test/resources/stepInfoForTesting.json").when(repository).getPathToJsonProp();
-//            ObjectMapper mapper = new ObjectMapper();
-//            String pathToJsonProp = repository.getPathToJsonProp();
-//            File file = new File(pathToJsonProp);
-//            ArrayList<Step> result = new ArrayList<>();
-//            try {
-//                result =  mapper.readValue(file, mapper.getTypeFactory().constructCollectionType(ArrayList.class, Step.class));
-//            }
-//            catch (IOException e){
-//                e.printStackTrace();
-//            }
-//        });
-//    }
-
     @ParameterizedTest
     @ValueSource(ints = {1, 2})
     void getStepById_returnStepClassTest(int i){
